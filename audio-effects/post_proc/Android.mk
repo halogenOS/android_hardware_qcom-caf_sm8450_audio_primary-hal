@@ -92,6 +92,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 LOCAL_C_INCLUDES := \
         $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
+        $(call project-path-for,qcom-audio)/pal \
         $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/audio \
         $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include \
         $(call include-path-for, audio-effects)
@@ -203,6 +204,8 @@ LOCAL_MODULE_OWNER := qti
 LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 LOCAL_C_INCLUDES := \
+        $(call project-path-for,qcom-audio)/primary-hal/hal \
+        $(call project-path-for,qcom-audio)/pal \
         $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
         $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/audio \
         $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include \
