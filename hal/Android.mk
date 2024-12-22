@@ -142,3 +142,4 @@ endif
 
 include $(BUILD_SHARED_LIBRARY)
 endif
+endif
